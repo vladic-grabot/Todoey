@@ -13,6 +13,8 @@
 		E9409FD4246104E300EBBEFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9409FD2246104E300EBBEFF /* Main.storyboard */; };
 		E9409FD6246104E700EBBEFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9409FD5246104E700EBBEFF /* Assets.xcassets */; };
 		E9409FD9246104E700EBBEFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9409FD7246104E700EBBEFF /* LaunchScreen.storyboard */; };
+		E9D9565B2463DBC9000F5F48 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9565A2463DBC9000F5F48 /* Item.swift */; };
+		E9D956612463E5DF000F5F48 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D956602463E5DF000F5F48 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E9409FD5246104E700EBBEFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9409FD8246104E700EBBEFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9409FDA246104E700EBBEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D9565A2463DBC9000F5F48 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E9D956602463E5DF000F5F48 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,10 @@
 		E9409FC0246104E300EBBEFF = {
 			isa = PBXGroup;
 			children = (
+				E9D956602463E5DF000F5F48 /* Default-568h@2x.png */,
 				E9409FCB246104E300EBBEFF /* Todoey */,
+				E9409FD5246104E700EBBEFF /* Assets.xcassets */,
+				E9409FD7246104E700EBBEFF /* LaunchScreen.storyboard */,
 				E9409FCA246104E300EBBEFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +63,38 @@
 		E9409FCB246104E300EBBEFF /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
-				E9409FCC246104E300EBBEFF /* AppDelegate.swift */,
-				E9409FCE246104E300EBBEFF /* SceneDelegate.swift */,
-				E9409FD0246104E300EBBEFF /* TodoListViewController.swift */,
-				E9409FD2246104E300EBBEFF /* Main.storyboard */,
-				E9409FD5246104E700EBBEFF /* Assets.xcassets */,
-				E9409FD7246104E700EBBEFF /* LaunchScreen.storyboard */,
+				E9D9565D2463DCEF000F5F48 /* Model */,
+				E9D9565F2463DD13000F5F48 /* Controller */,
 				E9409FDA246104E700EBBEFF /* Info.plist */,
+				E9D9565C2463DCD9000F5F48 /* View */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		E9D9565C2463DCD9000F5F48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9409FD2246104E300EBBEFF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9D9565D2463DCEF000F5F48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9D9565A2463DBC9000F5F48 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9D9565F2463DD13000F5F48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9409FCC246104E300EBBEFF /* AppDelegate.swift */,
+				E9409FD0246104E300EBBEFF /* TodoListViewController.swift */,
+				E9409FCE246104E300EBBEFF /* SceneDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9409FD9246104E700EBBEFF /* LaunchScreen.storyboard in Resources */,
+				E9D956612463E5DF000F5F48 /* Default-568h@2x.png in Resources */,
 				E9409FD6246104E700EBBEFF /* Assets.xcassets in Resources */,
 				E9409FD4246104E300EBBEFF /* Main.storyboard in Resources */,
 			);
@@ -139,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9409FD1246104E300EBBEFF /* TodoListViewController.swift in Sources */,
+				E9D9565B2463DBC9000F5F48 /* Item.swift in Sources */,
 				E9409FCD246104E300EBBEFF /* AppDelegate.swift in Sources */,
 				E9409FCF246104E300EBBEFF /* SceneDelegate.swift in Sources */,
 			);
