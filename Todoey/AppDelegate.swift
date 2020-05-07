@@ -11,11 +11,19 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print("did finish launching")
         return true
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        print("application did enter background")
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        print("application will terminate")
     }
 
     // MARK: UISceneSession Lifecycle
